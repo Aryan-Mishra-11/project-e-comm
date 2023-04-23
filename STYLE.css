@@ -1,10 +1,75 @@
-.prodhead{
-    display:inline-block;
+img {
+  width: 40%;
+  height: 50%;
 }
 
-.two{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container-border1 {
+  border: 2px solid #656161;
+  border-radius: 15px;
+}
+
+.container-padding {
+  padding: 15px;
+}
+
+.bgcolor {
+  background-color: #f5efef; /* Orange */
+}
+
+.col-sm-3 {
+  background-color: white;
+}
+
+#prodhead1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.prodheadlist {
+  font-family: Arial, sans-serif;
+  font-size: 130%;
+}
+
+#price {
+  font-family: Arial, sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+  color: red;
+}
+
+.button {
+  /* border: none; */
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: rgb(246, 239, 239);
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #0e120e;
+  color: white;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #f9f4f4;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: groove;
+  border-color: rgb(69, 58, 58);
+  display: inline-block;
 }

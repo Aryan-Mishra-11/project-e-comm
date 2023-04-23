@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="STYLE.css"> 
-</head>
-<body>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-  <br></br>  
-  <label for="search">Search</label>
-  <input type="text" id="search" name="search"><br>
-  <br>
-  <br>
-  <div class = 'prodhead'>
-  <img src="samsung-galaxy-s22-ultra-5g-3.jpg" alt="Samsung-G22">
-    <div class = 'prodhead'>
-    <h2 align = 'middle' class = 'two'> Samsung Galaxy S22 Ultra </h2>
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- product fronend logic -->
+    <script src="Prod-Logic.js" defer></script>
+  </head>
+
+  <body class="bgcolor">
+    <nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Project.com</a>
+        </div>
+        <div class="input-group navbar-right">
+          <form class="navbar-form navbar-right">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" />
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 container-border1">
+        <div class="container">
+          <img
+            class="img-reponsive"
+            src="samsung-galaxy-s22-ultra-5g-3.jpg"
+            alt="Samsung-G22"
+          />
+        </div>
+      </div>
+      <!-- Added to add margin between two columns -->
+      <div class="col-sm-5 col-md-offset-1 container-border1 container-padding" id="details">
+        <p id="prodhead1"></p>
+        <br />
+        <form class="seller hidden">
+          <label for="seller" class="prodheadlist">Choose a seller</label>
+          <select name="seller" id="sellerinfo">
+            <!-- <option value="seller1" id="seller1"></option> -->
+          </select>
+        </form>
+      </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
